@@ -16,6 +16,8 @@
 		60B8D10B268F647E00F29D19 /* HeroesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B8D10A268F647E00F29D19 /* HeroesTableViewController.swift */; };
 		60B8D10E268F64AC00F29D19 /* HeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B8D10D268F64AC00F29D19 /* HeroViewController.swift */; };
 		60B8D111268F64D100F29D19 /* HeroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B8D110268F64D100F29D19 /* HeroTableViewCell.swift */; };
+		60B8D11D268F8D2900F29D19 /* APIHeros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B8D11C268F8D2900F29D19 /* APIHeros.swift */; };
+		60B8D120268F9BD500F29D19 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B8D11F268F9BD500F29D19 /* Keys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		60B8D10A268F647E00F29D19 /* HeroesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesTableViewController.swift; sourceTree = "<group>"; };
 		60B8D10D268F64AC00F29D19 /* HeroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroViewController.swift; sourceTree = "<group>"; };
 		60B8D110268F64D100F29D19 /* HeroTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroTableViewCell.swift; sourceTree = "<group>"; };
+		60B8D11C268F8D2900F29D19 /* APIHeros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHeros.swift; sourceTree = "<group>"; };
+		60B8D11F268F9BD500F29D19 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 			children = (
 				60115955268F3E6E003E84E6 /* AppDelegate.swift */,
 				60115957268F3E6E003E84E6 /* SceneDelegate.swift */,
+				60B8D122268F9D1D00F29D19 /* Keys */,
 				60B8D115268F84B100F29D19 /* Model */,
 				60B8D117268F84C100F29D19 /* View */,
 				60B8D113268F84A300F29D19 /* Controller */,
@@ -79,6 +84,7 @@
 			children = (
 				60115959268F3E6E003E84E6 /* ViewController.swift */,
 				60B8D10A268F647E00F29D19 /* HeroesTableViewController.swift */,
+				60B8D11C268F8D2900F29D19 /* APIHeros.swift */,
 				60B8D10D268F64AC00F29D19 /* HeroViewController.swift */,
 			);
 			path = Controller;
@@ -98,6 +104,14 @@
 				6011595B268F3E6E003E84E6 /* Main.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		60B8D122268F9D1D00F29D19 /* Keys */ = {
+			isa = PBXGroup;
+			children = (
+				60B8D11F268F9BD500F29D19 /* Keys.swift */,
+			);
+			path = Keys;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,7 +188,9 @@
 				60B8D111268F64D100F29D19 /* HeroTableViewCell.swift in Sources */,
 				6011595A268F3E6E003E84E6 /* ViewController.swift in Sources */,
 				60115956268F3E6E003E84E6 /* AppDelegate.swift in Sources */,
+				60B8D11D268F8D2900F29D19 /* APIHeros.swift in Sources */,
 				60115958268F3E6E003E84E6 /* SceneDelegate.swift in Sources */,
+				60B8D120268F9BD500F29D19 /* Keys.swift in Sources */,
 				60B8D10B268F647E00F29D19 /* HeroesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

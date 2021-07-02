@@ -172,18 +172,25 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="kz8-J1-966">
+                                <rect key="frame" x="188.66666666666666" y="429.66666666666669" width="37" height="37"/>
+                                <color key="color" red="1" green="0.14913141730000001" blue="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zOu-ZM-cBg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Ek2-NY-PEH" firstAttribute="top" secondItem="zOu-ZM-cBg" secondAttribute="top" id="0jg-0T-Hvi"/>
                             <constraint firstAttribute="bottom" secondItem="Ek2-NY-PEH" secondAttribute="bottom" id="5sC-Dq-BqI"/>
+                            <constraint firstItem="kz8-J1-966" firstAttribute="centerX" secondItem="XmS-4b-hqJ" secondAttribute="centerX" id="CRb-fb-Xfc"/>
                             <constraint firstAttribute="trailing" secondItem="Ek2-NY-PEH" secondAttribute="trailing" id="Z8p-zN-7eA"/>
+                            <constraint firstItem="kz8-J1-966" firstAttribute="centerY" secondItem="XmS-4b-hqJ" secondAttribute="centerY" id="gdO-dh-lgk"/>
                             <constraint firstItem="Ek2-NY-PEH" firstAttribute="leading" secondItem="XmS-4b-hqJ" secondAttribute="leading" id="qCP-20-fh9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Nome do personagem" largeTitleDisplayMode="always" id="jtj-RK-YHh"/>
                     <connections>
+                        <outlet property="loading" destination="kz8-J1-966" id="14w-b5-otr"/>
                         <outlet property="webView" destination="Ek2-NY-PEH" id="hMr-w3-UEg"/>
                     </connections>
                 </viewController>

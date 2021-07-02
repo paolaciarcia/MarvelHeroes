@@ -12,6 +12,13 @@ class HeroesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    var label: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .center
+        label.textColor = .white
+        return label
+    }()
 
     // MARK: - Table view data source
 
