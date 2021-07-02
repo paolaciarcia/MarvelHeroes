@@ -10,6 +10,8 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var backgroundView: UIView!
+    @IBOutlet weak var searchCharacters: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +27,10 @@ class ViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.navigationController?.isNavigationBarHidden = false
+    }
+    
+    @IBAction func searchPressed(_ sender: UIButton) {
+        
     }
 }
 

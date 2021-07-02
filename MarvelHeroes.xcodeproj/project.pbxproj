@@ -64,16 +64,40 @@
 			children = (
 				60115955268F3E6E003E84E6 /* AppDelegate.swift */,
 				60115957268F3E6E003E84E6 /* SceneDelegate.swift */,
-				60115959268F3E6E003E84E6 /* ViewController.swift */,
-				6011595B268F3E6E003E84E6 /* Main.storyboard */,
-				60B8D10A268F647E00F29D19 /* HeroesTableViewController.swift */,
-				60B8D10D268F64AC00F29D19 /* HeroViewController.swift */,
-				60B8D110268F64D100F29D19 /* HeroTableViewCell.swift */,
+				60B8D115268F84B100F29D19 /* Model */,
+				60B8D117268F84C100F29D19 /* View */,
+				60B8D113268F84A300F29D19 /* Controller */,
 				6011595E268F3E79003E84E6 /* Assets.xcassets */,
 				60115960268F3E79003E84E6 /* LaunchScreen.storyboard */,
 				60115963268F3E79003E84E6 /* Info.plist */,
 			);
 			path = MarvelHeroes;
+			sourceTree = "<group>";
+		};
+		60B8D113268F84A300F29D19 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				60115959268F3E6E003E84E6 /* ViewController.swift */,
+				60B8D10A268F647E00F29D19 /* HeroesTableViewController.swift */,
+				60B8D10D268F64AC00F29D19 /* HeroViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		60B8D115268F84B100F29D19 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				60B8D110268F64D100F29D19 /* HeroTableViewCell.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		60B8D117268F84C100F29D19 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6011595B268F3E6E003E84E6 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
