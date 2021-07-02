@@ -20,19 +20,19 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QqD-CE-mwO">
-                                <rect key="frame" x="70" y="203" width="274" height="483"/>
+                                <rect key="frame" x="70" y="255" width="274" height="431"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="h8I-Iz-38L">
-                                        <rect key="frame" x="20" y="40" width="234" height="403"/>
+                                        <rect key="frame" x="20" y="40" width="234" height="351"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Coloque o nome do seu personagem favorito da MARVEL para buscar informações" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Hbv-DG-ywA">
-                                                <rect key="frame" x="0.0" y="0.0" width="234" height="200.66666666666666"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text=" Write your favorite MARVEL character to search informations" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Hbv-DG-ywA">
+                                                <rect key="frame" x="0.0" y="0.0" width="234" height="160.66666666666666"/>
                                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="26"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome(inglês)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JXC-yo-A1k">
-                                                <rect key="frame" x="0.0" y="230.66666666666669" width="234" height="30"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name(inglês)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JXC-yo-A1k">
+                                                <rect key="frame" x="0.0" y="190.66666666666669" width="234" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="mty-x6-Y52"/>
                                                 </constraints>
@@ -40,9 +40,9 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="re4-lt-Ryf">
-                                                <rect key="frame" x="0.0" y="290.66666666666663" width="234" height="112.33333333333331"/>
+                                                <rect key="frame" x="0.0" y="250.66666666666666" width="234" height="100.33333333333334"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
-                                                <state key="normal" title="Buscar">
+                                                <state key="normal" title="Search">
                                                     <color key="titleColor" systemColor="systemYellowColor"/>
                                                 </state>
                                                 <connections>
@@ -83,22 +83,56 @@
             </objects>
             <point key="canvasLocation" x="3417.3913043478265" y="109.23913043478262"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Marvel Heroes-->
         <scene sceneID="qfI-La-Nx8">
             <objects>
-                <tableViewController id="diM-KB-Ghe" sceneMemberID="viewController">
+                <tableViewController id="diM-KB-Ghe" customClass="HeroesTableViewController" customModule="MarvelHeroes" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NeU-Jz-KWw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="120" id="iBl-7b-9dZ">
-                                <rect key="frame" x="0.0" y="28" width="414" height="120"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="iBl-7b-9dZ" customClass="HeroTableViewCell" customModule="MarvelHeroes" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iBl-7b-9dZ" id="rV0-EI-6jV">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do Herói" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHB-b5-NjB">
+                                            <rect key="frame" x="96" y="19" width="290" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descrição história" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUb-oO-aD0">
+                                            <rect key="frame" x="96" y="53" width="290" height="20.333333333333329"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x73-gc-9h3">
+                                            <rect key="frame" x="8" y="8" width="80" height="80"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="80" id="TPc-Gu-Dlc"/>
+                                                <constraint firstAttribute="width" constant="80" id="vaL-jp-A5Z"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="wUb-oO-aD0" secondAttribute="bottom" priority="250" constant="10" id="19l-YR-VrU"/>
+                                        <constraint firstItem="QHB-b5-NjB" firstAttribute="top" secondItem="rV0-EI-6jV" secondAttribute="topMargin" constant="8" id="EB6-5C-EN0"/>
+                                        <constraint firstItem="wUb-oO-aD0" firstAttribute="leading" secondItem="x73-gc-9h3" secondAttribute="trailing" constant="8" id="I9U-IP-5Gq"/>
+                                        <constraint firstItem="x73-gc-9h3" firstAttribute="leading" secondItem="rV0-EI-6jV" secondAttribute="leading" constant="8" id="U7i-TE-PnI"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="x73-gc-9h3" secondAttribute="bottom" constant="8" id="XIJ-j2-h7I"/>
+                                        <constraint firstItem="QHB-b5-NjB" firstAttribute="leading" secondItem="x73-gc-9h3" secondAttribute="trailing" constant="8" id="Ymi-cY-ENU"/>
+                                        <constraint firstItem="x73-gc-9h3" firstAttribute="top" secondItem="rV0-EI-6jV" secondAttribute="top" constant="8" id="iIC-aT-y9Y"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="wUb-oO-aD0" secondAttribute="trailing" constant="8" id="nCK-mc-EZ7"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="QHB-b5-NjB" secondAttribute="trailing" constant="8" id="t1b-PD-xYR"/>
+                                        <constraint firstItem="wUb-oO-aD0" firstAttribute="top" secondItem="QHB-b5-NjB" secondAttribute="bottom" constant="10" id="yTM-e3-DdH"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" systemColor="labelColor"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -106,38 +140,54 @@
                             <outlet property="delegate" destination="diM-KB-Ghe" id="e5k-Lw-oHL"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="MO3-vG-TzA"/>
+                    <navigationItem key="navigationItem" title="Marvel Heroes" largeTitleDisplayMode="always" id="MO3-vG-TzA"/>
                     <connections>
                         <segue destination="FoH-Po-x6t" kind="show" id="cj7-qW-pYg"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VEx-2m-XM8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4396" y="110"/>
+            <point key="canvasLocation" x="4395.652173913044" y="109.82142857142857"/>
         </scene>
-        <!--View Controller-->
+        <!--Nome do personagem-->
         <scene sceneID="C1H-Wl-XTS">
             <objects>
-                <viewController id="FoH-Po-x6t" sceneMemberID="viewController">
+                <viewController id="FoH-Po-x6t" customClass="HeroViewController" customModule="MarvelHeroes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XmS-4b-hqJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ek2-NY-PEH">
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="zOu-ZM-cBg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ek2-NY-PEH" firstAttribute="top" secondItem="zOu-ZM-cBg" secondAttribute="top" id="0jg-0T-Hvi"/>
+                            <constraint firstAttribute="bottom" secondItem="Ek2-NY-PEH" secondAttribute="bottom" id="5sC-Dq-BqI"/>
+                            <constraint firstAttribute="trailing" secondItem="Ek2-NY-PEH" secondAttribute="trailing" id="Z8p-zN-7eA"/>
+                            <constraint firstItem="Ek2-NY-PEH" firstAttribute="leading" secondItem="XmS-4b-hqJ" secondAttribute="leading" id="qCP-20-fh9"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="jtj-RK-YHh"/>
+                    <navigationItem key="navigationItem" title="Nome do personagem" largeTitleDisplayMode="always" id="jtj-RK-YHh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z04-qD-q1G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5310" y="110"/>
+            <point key="canvasLocation" x="5307.2463768115949" y="109.82142857142857"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pYm-CT-m6w">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ORi-lq-beL" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KIK-GR-VJB">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="KIK-GR-VJB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -152,6 +202,9 @@
     </scenes>
     <resources>
         <image name="bg" width="1920" height="840"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
