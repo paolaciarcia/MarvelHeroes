@@ -47,7 +47,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="searchPressed:" destination="cXM-8j-St8" eventType="touchUpInside" id="MWh-fF-O27"/>
-                                                    <segue destination="diM-KB-Ghe" kind="show" id="yXZ-GK-Kls"/>
+                                                    <segue destination="diM-KB-Ghe" kind="show" identifier="showCharacter" id="yXZ-GK-Kls"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -149,7 +149,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Marvel Heroes" largeTitleDisplayMode="always" id="MO3-vG-TzA"/>
                     <connections>
-                        <segue destination="FoH-Po-x6t" kind="show" id="cj7-qW-pYg"/>
+                        <segue destination="FoH-Po-x6t" kind="show" identifier="showCharacterDetail" id="cj7-qW-pYg"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VEx-2m-XM8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
