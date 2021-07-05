@@ -63,4 +63,13 @@ class HeroesTableViewController: UITableViewController {
 
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "showHero", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let vc = segue.destination as? HeroViewController else { return }
+        vc.hero = heroes[tableView.indexPathForSelectedRow!.row]
+    }
 }

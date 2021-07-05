@@ -44,7 +44,6 @@ struct Thumbnail: Codable {
     var url: String {
         return unwrappedPath + "." + unwrappedExt
     }
-    
     enum CodingKeys: String, CodingKey {
         case path
         case ext = "extension"
