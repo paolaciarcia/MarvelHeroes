@@ -46,7 +46,6 @@
                                                     <color key="titleColor" systemColor="systemYellowColor"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="searchPressed:" destination="cXM-8j-St8" eventType="touchUpInside" id="MWh-fF-O27"/>
                                                     <segue destination="diM-KB-Ghe" kind="show" identifier="showCharacter" id="yXZ-GK-Kls"/>
                                                 </connections>
                                             </button>
@@ -104,7 +103,6 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do Herói" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHB-b5-NjB">
                                             <rect key="frame" x="96" y="19" width="270.66666666666669" height="24"/>
                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descrição história" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUb-oO-aD0">
@@ -134,7 +132,6 @@
                                         <constraint firstItem="wUb-oO-aD0" firstAttribute="top" secondItem="QHB-b5-NjB" secondAttribute="bottom" constant="10" id="yTM-e3-DdH"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" systemColor="labelColor"/>
                                 <connections>
                                     <outlet property="characterImage" destination="x73-gc-9h3" id="07e-8i-nqG"/>
                                     <outlet property="characterName" destination="QHB-b5-NjB" id="Oeo-CF-btW"/>
@@ -148,9 +145,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Marvel Heroes" largeTitleDisplayMode="always" id="MO3-vG-TzA"/>
-                    <connections>
-                        <segue destination="FoH-Po-x6t" kind="show" identifier="showCharacterDetail" id="cj7-qW-pYg"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VEx-2m-XM8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -165,7 +159,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ek2-NY-PEH">
-                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -219,9 +213,6 @@
     </scenes>
     <resources>
         <image name="bg" width="1920" height="840"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -29,8 +29,10 @@ class ViewController: UIViewController {
         self.navigationController?.isNavigationBarHidden = false
     }
     
-    @IBAction func searchPressed(_ sender: UIButton) {
-        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        searchCharacters.resignFirstResponder()
+        let vc = segue.destination as! HeroesTableViewController
+        vc.name = searchCharacters.text
     }
 }
 
