@@ -18,7 +18,8 @@ class HeroesTableViewController: UITableViewController {
     var label: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
-        label.textColor = .white
+        label.textColor = .black
+        label.font = UIFont(name: "Arial", size: 20)
         return label
     }()
 
@@ -26,7 +27,7 @@ class HeroesTableViewController: UITableViewController {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
-        label.text = "Looking for Heroes, wait..."
+        label.text = "Looking for heroes, wait..."
         loadHeroes()
     }
     
@@ -72,4 +73,14 @@ class HeroesTableViewController: UITableViewController {
         guard let vc = segue.destination as? HeroViewController else { return }
         vc.hero = heroes[tableView.indexPathForSelectedRow!.row]
     }
+    
+    //infinitive scroll
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row == heroes.count - 10 && !loadingHeroes && heroes.count != total {
+            currentPage += 1
+            loadHeroes()
+        }
+    }
 }
+
+
