@@ -32,7 +32,6 @@ class APIHeros {
                 onComplete(nil)
                 return
             }
-            
             do {
                 let marvelInfo = try JSONDecoder().decode(MarvelInfo.self, from: data)
                 onComplete(marvelInfo)

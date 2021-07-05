@@ -32,7 +32,7 @@ struct Hero: Codable {
 struct Thumbnail: Codable {
     let path: String?
     let ext: String?
-
+    
     private var unwrappedPath: String {
         return path ?? ""
     }
@@ -49,7 +49,6 @@ struct Thumbnail: Codable {
         case ext = "extension"
     }
 }
-
 
 struct HeroURL: Codable {
     let type: String?

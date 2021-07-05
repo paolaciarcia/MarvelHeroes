@@ -9,10 +9,11 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    //MARK: - IBOutlets
     @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var searchCharacters: UITextField!
     
-    
+    //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         backgroundView.layer.borderWidth = 3
@@ -29,6 +30,7 @@ class ViewController: UIViewController {
         self.navigationController?.isNavigationBarHidden = false
     }
     
+    //MARK: - Segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         searchCharacters.resignFirstResponder()
         let vc = segue.destination as! HeroesTableViewController

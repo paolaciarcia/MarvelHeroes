@@ -9,6 +9,7 @@ import UIKit
 
 class HeroesTableViewController: UITableViewController {
     
+    //MARK: - Properties
     var heroes: [Hero] = []
     var name: String?
     var loadingHeroes: Bool = false
@@ -23,6 +24,7 @@ class HeroesTableViewController: UITableViewController {
         return label
     }()
 
+    //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
@@ -31,6 +33,7 @@ class HeroesTableViewController: UITableViewController {
         loadHeroes()
     }
     
+    //MARK: - Methods
     func loadHeroes() {
         loadingHeroes = true
         APIHeros.loadHeros(name: name, page: currentPage) { (info) in
@@ -51,7 +54,6 @@ class HeroesTableViewController: UITableViewController {
     
 
     // MARK: - Table view data source
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         tableView.backgroundView = heroes.count == 0 ? label : nil
         return heroes.count
@@ -65,6 +67,7 @@ class HeroesTableViewController: UITableViewController {
         return cell
     }
     
+    // MARK: - Table view delegate
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "showHero", sender: self)
     }
